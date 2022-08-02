@@ -1,0 +1,133 @@
+section {
+    color: white;
+    margin-top: 5%;
+}
+
+.categories__heading {
+    background: rgba(217, 217, 217, 0.59);
+    border-radius: 19px;
+    width: 60%;
+    height: 10%;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.categories__heading h1 {
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.categories__left {
+    margin-top: 3rem;
+    width: 80%;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    border-radius: 20px 20px 20px 20px;
+    background-image: url(https://i.ibb.co/NVYq3KL/paul-gaudriault-a-QH9-MAAVNI-unsplash.jpg);
+}
+
+.categories__left h1 {
+    text-align: start;
+    margin-left: .5rem;
+    margin-top: 1.4rem;
+    font-size: large;
+    align-self: flex-start;
+    justify-self: end;
+    position: absolute;
+    text-decoration: overline;
+
+}
+
+.categories__right {
+    margin-top: 3rem;
+    width: 80%;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%; 
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 20%;
+    background-image: url(https://i.ibb.co/NVYq3KL/paul-gaudriault-a-QH9-MAAVNI-unsplash.jpg)
+}
+
+.categories__right h1 {
+    margin-left: .5rem;
+    margin-top: 1.4rem;
+    font-size: large;
+    position: absolute;
+    right: .5rem;
+    text-decoration: overline;
+}
+
+@media only screen and (min-width: 768px) {
+    .categories__heading {
+        width: 50%;
+        height: 15%;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+
+    .categories__left {
+        height: 6rem;   
+
+    }
+
+    .categories__left h1 {
+        font-size: 2rem;
+    }
+
+    .categories__right {
+        height: 6rem;   
+    }
+
+    .categories__right  h1{
+        font-size: 2rem;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .categories__left {
+        margin-top: 3rem;
+        width: 100%;
+        height: 10rem;
+        border-radius: 0px 20px 20px 0px;
+    }
+    
+    .categories__left h1 {
+        text-align: start;
+        margin-left: .5rem;
+        margin-top: 1.4rem;
+        font-size: large;
+        align-self: flex-start;
+        justify-self: end;
+        position: absolute;
+        text-decoration: overline;
+        font-size: 3rem;
+    }
+    
+    .categories__right {
+        margin-top: 3rem;
+        width: 100%;
+        height: 10rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        border-radius: 20px 0px 0px 20px;
+        margin-left: 0%;
+    }
+    
+    .categories__right h1 {
+        margin-left: .5rem;
+        margin-top: 1.4rem;
+        font-size: large;
+        position: absolute;
+        right: .5rem;
+        text-decoration: overline;
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,67 @@
+.karosel {
+    color: white;
+    margin-top: 3rem !important;
+    
+}
+
+.karosel__item {
+    height: 100% !important;
+
+}
+
+.carousel-inner {
+    height: 100%;
+    border-radius: 30px;
+}
+
+.karosel__item img {
+    height: 100%;
+}
+
+.karosel__caption {
+    right: 0 ; 
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+     left: 0;
+     padding-top: 0; 
+     padding-bottom: 0;
+
+}
+
+.karosel__caption  img {
+    width: 43px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.karosel__caption__toko {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    .karosel {
+        height: 100vh;
+    }
+
+    .karosel__caption__toko  img{
+        width: 100px;
+        height: 100px;
+    }
+    .karosel__caption__toko h5{
+        font-size: 30px;
+    }
+
+    .karosel__judul {
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .karosel__harga {
+        font-size: 50px;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
