@@ -1,5 +1,5 @@
 {
-  "products" : [
+  "products": [
     {
       "id": 1,
       "namapenjual": "Nikee",
@@ -7,9 +7,9 @@
       "harga": "998.000",
       "qty": 30,
       "deskripsi": " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-      "warna" : "lue",
-      "ukuran" : 44,
-      "gambarProduk" : "https://i.ibb.co/F0hZPWX/pngfind-com-timberland-boots-png-1927939.png",
+      "warna": "lue",
+      "ukuran": 44,
+      "gambarProduk": "https://i.ibb.co/F0hZPWX/pngfind-com-timberland-boots-png-1927939.png",
       "kategori": "Sport"
     },
     {
@@ -19,10 +19,22 @@
       "harga": "959.000",
       "qty": 20,
       "deskripsi": " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-      "warna" : "red",
-      "ukuran" : 44,
-      "gambarProduk" : "https://i.ibb.co/Mhn58Vw/pngfind-com-adidas-shoes-png-2100465.png",
+      "warna": "red",
+      "ukuran": 44,
+      "gambarProduk": "https://i.ibb.co/Mhn58Vw/pngfind-com-adidas-shoes-png-2100465.png",
       "kategori": "Sport"
+    },
+    {
+      "namapenjual": "saya",
+      "namaProduk": "saya punya",
+      "harga": "1000",
+      "qty": "10",
+      "deskripsi": "kkeelliiuummnnbbbss",
+      "warna": "yellow green",
+      "ukuran": "12",
+      "gambarProduk": "https://i.ibb.co/Mhn58Vw/pngfind-com-adidas-shoes-png-2100465.png",
+      "kategori": "Boots",
+      "id": 4
     }
   ]
 }

@@ -1,0 +1,29 @@
+.formss {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+form Button {
+    margin-top: 20px;
+}
+
+
+
+.formss label {
+    margin-top: 5px;
+}
+
+.btn-info {
+    border: none;
+    background: rgba(180, 178, 178, 0.548);
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+
+
+
+

@@ -1,17 +1,23 @@
 import React from 'react'
 import '../Style/Product.css'
 import StarsRating from 'stars-rating'
+import { Link, useParams } from 'react-router-dom'
 
-const Cards = ({ namapenjual, namaProduk, harga, qty,deskripsi,gambarProduk}) => {
+const Cards = ({ namapenjual, namaProduk, harga,gambarProduk, id}) => {
+
+
+
+
+
   return (
     <div className="col hp">
     <div className="card h-100 shadow-sm">
-      <a href="#">
+      <span href="#">
         <img src={gambarProduk} className="card-img-top" alt="product.title" />
-      </a>
+      </span>
 
       <div className="label-top shadow-sm">
-        <a className="text-white" href="#">{namapenjual}</a>
+        <span className="text-white" >{namapenjual}</span>
       </div>
       <div className="card-body">
         <div className="clearfix mb-3">
@@ -32,9 +38,9 @@ const Cards = ({ namapenjual, namaProduk, harga, qty,deskripsi,gambarProduk}) =>
         </h4>
 
         <div className="d-grid gap-2 my-4">
-
-          <a href="#" className="btn btn-warning bold-btn">add to cart</a>
-
+          <Link to={`/detail/${id}`} >
+          <button className="btn btn-warning bold-btn">add to cart</button>
+          </Link>
         </div>
         <div className="clearfix mb-1">
         </div>

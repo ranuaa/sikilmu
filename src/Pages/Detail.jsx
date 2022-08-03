@@ -1,10 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import StarsRating from 'stars-rating'
 import Navbar from '../Components/Navbar'
 import '../Style/Detail.css'
+import { useParams } from 'react-router-dom'
+import axios from 'axios'
 
 
 const Detail = () => {
+
+    const {id} = useParams();
+    const [detail, setDetail] = useState([]);
+
+
+
+    useEffect(() => {
+        getDetailProduk();
+    }, [])
+
+
+    const getDetailProduk = async() => {
+        const response = await axios.get(`http://localhost:3500/products/${id}`)
+        setDetail(response.data);
+    }
+
+  
+
     return (
         <div>
             <div
@@ -20,15 +40,15 @@ const Detail = () => {
 
                     <div className="product-image">
                         <img src="http://co0kie.github.io/codepen/nike-product-page/nikeLogo.png" alt="" className="product-logo" />
-                        <img src="http://co0kie.github.io/codepen/nike-product-page/nikeShoe.png" alt="" className="product-pic" />
+                        <img src={detail.gambarProduk} alt="" className="product-pic" />
                     </div>
 
                     <div className="product-details">
                         <header>
-                            <h1 className="title">Nike Roshe Run</h1>
-                            <span className="colorCat">Nike</span>
+                            <h1 className="title">{detail.namaProduk}</h1>
+                            <span className="colorCat">{detail.namapenjual}</span>
                             <div className="price">
-                                <span className="current">Rp.144.999</span>
+                                <span className="current">Rp.{detail.harga}</span>
                             </div>
                             <div className="rate">
 
@@ -36,7 +56,7 @@ const Detail = () => {
                         </header>
                         <article>
                             <h5>Description</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>{detail.deskripsi}</p>
                         </article>
 
 
