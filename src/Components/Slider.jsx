@@ -2,9 +2,26 @@ import React from 'react'
 import '../Style/Slider.css'
 import Carousel from 'react-bootstrap/Carousel';
 import StarsRating from 'stars-rating'
+import { useDispatch, useSelector } from 'react-redux'
+import { getListProduk } from '../action/produkAction'
+import { useEffect } from 'react'
+
+
+
 
 const Slider = () => {
+
+
+  const { getListProdukResult, getListProdukError, getListProdukLoading } = useSelector((state) => state.ProdukReducer) 
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getListProduk())
+}, [dispatch])
+
   return (
+
+
     <Carousel className='karosel'>
       <Carousel.Item className='karosel__item h-100'>
         <img

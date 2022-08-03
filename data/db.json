@@ -1,39 +1,28 @@
 {
-  "produks": [
+  "products" : [
     {
       "id": 1,
-      "store_name": "O'Connell Group",
-      "product": "Pie Box - Cello Window 2.5",
-      "qty": 9,
-      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHsSURBVDjLtZPpTlpRFIV5Dt7AOESr1kYNThGnSomIihPoNVi5Qp3RgBgvEERpRW1BRBAcMEDUtIkdjKk4otK0Jdr2vgxZ3kA0MYoaG3+cX2evb529zt4sAKz/OawnASgCBNm5LaE7vjVDutkA4mMdLV4TkvcCuvba2Iqd1pDhWA33mQU+2oXVv07YfpoxuNWFuqVXoeqFCnZcgJwRm04p+Gk3Fs9t8PyZx/K5Hfbf03CGLRj62g2+rSR0K0D+vZXUB1Xw/ou5usJWjAaU0Gz3w/rjHey/ZjDLvKTD34KSyXzyBkC2JaYd4feMqyNa3OQTREQePlXjrqSq5ssj5hMjTMd66ALDKDLm0jcA0s+NID6JIFmvQaNXANEKX3l5x7NyqTcb7Zg8GYtCOLoXuPcbha6XV0VlU4WUzE9gPKjF2CGFbE3G3QAmafDnShETF3iKTZyIblcNza4Syi/deD6USscFCJwV6Fwn8NonQak5Hy1L9TAcjkJ/oAG1p0a1hYdnfcnkrQCBoxyyNYLp1YCJoB7GIwqGgxGod/oZsQoNDiHSepNCceeAN8uF1CvGxJE25rofc+3blKPqQ2VUnKxIYN85yty3eWh216LeKUTOSCayVGlIH0g5S+1JJB+8Cxxt1rWkH7WNTNIPAlwA9Gm7OcXUHxUAAAAASUVORK5CYII="
+      "namapenjual": "Nikee",
+      "namaProduk": "Nike Basketball Shoes Limited",
+      "harga": "998.000",
+      "qty": 30,
+      "deskripsi": " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      "warna" : "lue",
+      "ukuran" : 44,
+      "gambarProduk" : "https://i.ibb.co/F0hZPWX/pngfind-com-timberland-boots-png-1927939.png",
+      "kategori": "Sport"
     },
     {
       "id": 2,
-      "store_name": "Abernathy-Fay",
-      "product": "Appetizer - Shrimp Puff",
-      "qty": 12,
-      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEgSURBVDjLrZMxSkQxEIa/J2IhVmKlF/EWVl7FW3iNrS28wna29iKIKNgIvrfZzPy/Rd7uIu5jFzQQApnMN18mpLPNX8bhrgO396+bCoaUubk67/YGAFycHiEbCZ7fFz9iB/sAVslKU9Pbr3D30NuAEgzYcH153EWaDJBMpqhlApCCs5MDBFjw9ikAIkSkUJqQKDW2A2xIt1WGaPnUKiJa9UxPG0SCtAFktv1l9doi05TI7QCNBtJPg2VNaogcLWrdYdAARtkItSRRW/WQqXXCINQaKbsZjOdKNXWsLkFMPWOmSHWbHnjVxGzJ2cCSJgwMLx9Jji+y+iKxNI9PX78SV6P7l880m81cSmEYBhaLBX3f/5rDMKzjpRTm83n3LwbfdX8jZ1EmeqAAAAAASUVORK5CYII="
-    }, 
-    {
-      "id": 3,
-      "store_name": "Bayer Inc",
-      "product": "Syrup - Golden, Lyles",
-      "qty": 1,
-      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGOSURBVDjLlZPNapNBFIafSdOvtbFgSi1dREEtguDSnTfStbgW9A6y9BICinfkRosRFw1mE5BoS4rNzPlzEfOrYjJwOGfzPvO+h5kUEWx6zt6+eO1ur8x0VN9E+Ondyy/udlLdPua8d8ZBrdIZoN1uh7szLTOb9WePgxpOdXjMzXsnuDlx/gGRzAxgZrRaLQBSSks94iPNJ0+BRL4aYpKJcER0GbAqns5mhptRRgNMC1Aj3P50sChanFULboJpwbUAiXCnlPEcoKr/BJgWQhWXMnEQE4DKmNrfHKyW/L7ZJBNyzVGzR4RSSp4DFh2sOhEpmCpWMo0bPzi4NWR76xqR/0SYA8a4ZkwyF9+3cD0kl8HyEqeA1fwpJUrJuAouGRNhmOvgjkhZD6AynuxABdNMSnXcHdU1AUXyRCwZl0JKTsQGAJFJhL3mHVwFzT8hBpgpqdPpRLfbpd/vL73/xX56v0djf5+d3QbV7h7b1Q6jqwu+fn7/La3znd88v3tkpg/M5JGZPnS3Vq1enZrky19GcE/tIr8QhwAAAABJRU5ErkJggg=="
-    }, 
-    {
-      "id": 4,
-      "store_name": "Boyer Inc",
-      "product": "Oyster - In Shell",
-      "qty": 40,
-      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAI2SURBVDjLjZPda5JhGMZX/0AHnRQldFwjCs0maplQE8mJ5Wxr6WiWa7XaAoVFrSTbWFpslQ6NDjroAzJYnZQSHQQj6DBaBx7awcQv/P52XT3303pn5GgvXAcvz3P97vu+eO4OAB0k9u1kEjNJ/6NdTJsFXwtAXK1Ws41GY6XZbKKd2Dm8Xu+DVkgrQErmYrGIUqkkKJfLIZPJIB6Pc0gsFoPP5xMg3OxwerZaRx0122UHvn6PYHB4DEO2S6hUKigUCshms0gkEhxQLpdBRQKBwG8IM25x3vPPumafQHP8BBY/f0G3zojr03N4NO/nHeTzeSSTyX9G4plM3vWJTBZbYWxiCvIjWkzO+KDSmmB3PYSqW49o9IcwSiqV4p0sLy+vASSyQ1M64wDmnr6BwTyC8/Zp9PRZMeN/Ba3hNG677vDwCEKdUB7pdHoNwKpn+s6OQKM3QaPVwe32QKZQQaE+BnGXErv3dIKFyyE0P2VCIAHAMqguhBdx//FLTNxw4tvSEiznRvFs4QM8/hfQG07yy/V6HbVajUNIAmDwwlUE332Cbfwa+s1DeB8KwWy7gudvP+Ki/Sb27hPzy9QFAUjUjQAwDlh5dcvwOOSqowgGX6On9wxuuefBxsO27Tu4mTogkfkvQJdSHVGoNZHO/Qeivaf6EQqHIZMroTyshkR6EHKFQjC3SgCsvsJN9NPu+VL1dloP8HO9PWijFQGwCpGwgEp0sBEzu1vg29sCEBFkA+v8R7T6ol/92Z1dPFeoPQAAAABJRU5ErkJggg=="
-    }, 
-    {
-      "id": 5,
-      "store_name": "Blick-Balistreri",
-      "product": "Carbonated Water - Cherry",
-      "qty": 27,
-      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEZSURBVCjPY/jPgB9iEVoqPefllFPdNk2GWBUsVpz9ctL1rkcNW/v+59VhKFgkPfP+xI0dF+uC/jPkWCR/Q1MwX2TGvf7Nretr/UG8BO2I5ygK5olP/dCzpWV+dVAhd+bB+JawrT7ICubIT3nbvaFpVkVqgVDa0diO4CneN91E4Qpmq0560jW/YXp5XB5nyq2YrqCFno9cJeG+mKk48UHHjLruMu8czuSbkfUBizxeucrDw2GGev/71uW1jMVrsq4nPIto8F/g8caFDymgetxbHlVLgDjxnWExPjPdb7sIoYRkk17FywJRECdY1Xux201nMbSgLufO25qyJUY1yNrzsus9JxkscZHMG+kVcN7jqWueowARkUWiAgBEUvolGfpITwAAAABJRU5ErkJggg=="
+      "namapenjual": "Nike 2",
+      "namaProduk": "Nike Basketball Shoes",
+      "harga": "959.000",
+      "qty": 20,
+      "deskripsi": " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      "warna" : "red",
+      "ukuran" : 44,
+      "gambarProduk" : "https://i.ibb.co/Mhn58Vw/pngfind-com-adidas-shoes-png-2100465.png",
+      "kategori": "Sport"
     }
   ]
 }
