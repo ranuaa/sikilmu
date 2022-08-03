@@ -40,6 +40,7 @@ const Product = () => {
                     qty={produk.qty}
                     deskripsi={produk.deskripsi}
                     gambarProduk={produk.gambarProduk}
+                    id={produk.id}
                     />
                 })
             ) : getListProdukLoading ? (<p>Loading...</p>
