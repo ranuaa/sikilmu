@@ -1,11 +1,9 @@
 import React from 'react'
 
-const ListProducts = () => {
+export const ListProdukSatuan = () => {
   return (
     <div>
         
     </div>
   )
 }
-
-export default ListProducts
