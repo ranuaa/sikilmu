@@ -5,6 +5,7 @@ import Navbar from '../Components/Navbar'
 import Slider from '../Components/Slider'
 import '../Style/Home.css'
 
+
 const Home = () => {
   return (
     <div className='home'>
