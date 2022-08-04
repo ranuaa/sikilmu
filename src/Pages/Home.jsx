@@ -1,5 +1,5 @@
 import React from 'react'
-import Category from '../Components/Category'
+
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import Slider from '../Components/Slider'
@@ -11,7 +11,6 @@ const Home = () => {
     <div className='home'>
         <Navbar/>
         <Slider/>
-        <Category/>
         <Footer/>
     </div>
   )

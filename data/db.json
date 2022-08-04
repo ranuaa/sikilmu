@@ -35,6 +35,18 @@
       "ukuran": "11",
       "gambarProduk": "https://i.ibb.co/Mhn58Vw/pngfind-com-adidas-shoes-png-2100465.png",
       "kategori": "Heels"
+    },
+    {
+      "namapenjual": "sadasd",
+      "namaProduk": "sadasd",
+      "harga": "7000",
+      "qty": "44",
+      "deskripsi": "sdasdas",
+      "warna": "yellow green",
+      "ukuran": "44",
+      "gambarProduk": "https://i.ibb.co/Mhn58Vw/pngfind-com-adidas-shoes-png-2100465.png",
+      "kategori": "",
+      "id": 5
     }
   ]
 }
