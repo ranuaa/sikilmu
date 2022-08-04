@@ -1,20 +1,8 @@
 {
   "products": [
     {
-      "id": 1,
-      "namapenjual": "Nikee",
-      "namaProduk": "Nike Basketball Shoes Limited",
-      "harga": "998.000",
-      "qty": 30,
-      "deskripsi": " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-      "warna": "lue",
-      "ukuran": 44,
-      "gambarProduk": "https://i.ibb.co/F0hZPWX/pngfind-com-timberland-boots-png-1927939.png",
-      "kategori": "Sport"
-    },
-    {
       "id": 2,
-      "namapenjual": "Nike 2",
+      "namapenjual": "Nike 22",
       "namaProduk": "Nike Basketball Shoes",
       "harga": "959.000",
       "qty": 20,
@@ -25,16 +13,28 @@
       "kategori": "Sport"
     },
     {
-      "namapenjual": "saya",
-      "namaProduk": "saya punya",
+      "id": 3,
+      "namapenjual": "33132",
+      "namaProduk": "4444",
       "harga": "1000",
-      "qty": "10",
-      "deskripsi": "kkeelliiuummnnbbbss",
-      "warna": "yellow green",
-      "ukuran": "12",
+      "qty": "33422",
+      "deskripsi": "weqweqwe",
+      "warna": "pink",
+      "ukuran": "55",
       "gambarProduk": "https://i.ibb.co/Mhn58Vw/pngfind-com-adidas-shoes-png-2100465.png",
-      "kategori": "Boots",
-      "id": 4
+      "kategori": "Boots"
+    },
+    {
+      "id": 4,
+      "namapenjual": "asasas",
+      "namaProduk": "Sepatu Lari",
+      "harga": "466.000",
+      "qty": "1",
+      "deskripsi": "1",
+      "warna": "111",
+      "ukuran": "11",
+      "gambarProduk": "https://i.ibb.co/Mhn58Vw/pngfind-com-adidas-shoes-png-2100465.png",
+      "kategori": "Heels"
     }
   ]
 }

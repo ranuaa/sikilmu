@@ -1,0 +1,35 @@
+.bungkus {
+    border: 1px solid black;
+    margin: .25rem auto;
+    background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+}
+
+.bungkus img {
+    width: 55px;
+    height: 55px;
+}
+
+.bungkus .col {
+    margin: 5% auto;
+}
+
+
+.delete {
+    border: none;
+    border-radius: 20px;
+    width: 90px;
+    background-color: red;
+    color: white
+}
+
+.edit {
+    border: none;
+    border-radius: 20px;
+    width: 90px;
+    background-color: aqua;
+}
+
+.col {
+    font-weight: bold;
+    font-size: 20px;
+}

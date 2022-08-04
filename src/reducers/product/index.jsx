@@ -1,14 +1,24 @@
-import { GET_LIST_PRODUK, ADD_PRODUK } from "../../action/produkAction";
+import { GET_LIST_PRODUK, ADD_PRODUK, DELETE_PRODUK, DETAIL_PRODUK, UPDATE_PRODUK } from "../../action/produkAction";
 
 const initialState = {
     //list
     getListProdukResult : false,
     getListProdukLoading: false,
     getListProdukError: false,
-    //add
+    //Delete
+    deleteProdukResult : false,
+    deleteProdukLoading: false,
+    deleteProdukError: false,
+
     addProdukResult : false,
     addProdukLoading: false,
-    addProdukError: false
+    addProdukError: false,
+    
+    updateProdukResult : false,
+    updateProdukLoading: false,
+    updateProdukError: false,
+
+    detailProdukResult: false
 }
 
 const produk = ( state = initialState, action) => {
@@ -26,9 +36,27 @@ const produk = ( state = initialState, action) => {
                 addProdukResult : action.payload.data,
                 addProdukLoading: action.payload.loading,
                 addProdukError: action.payload.errorMessage
-            }
-
-        default:
+            };
+            case DELETE_PRODUK:
+            return {
+                ...state,
+                deleteProdukResult : action.payload.data,
+                deleteProdukLoading: action.payload.loading,
+                deleteProdukError: action.payload.errorMessage
+            };
+            case DETAIL_PRODUK:
+                return {
+                    ...state,
+                    detailProdukResult: action.payload.data
+                };
+                case UPDATE_PRODUK:
+            return {
+                ...state,
+                updateProdukResult : action.payload.data,
+                updateProdukLoading: action.payload.loading,
+                updateProdukError: action.payload.errorMessage
+            };
+       default:
             return state;
     }
 }
