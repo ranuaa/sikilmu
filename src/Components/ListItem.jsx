@@ -14,9 +14,9 @@ const Listitem = ({produk}) => {
   return (
     <div className='row bungkus'>
         <div className='col'>{produk ? produk.id : <p>id</p>}</div>
-        <div className='col'>{produk ? produk.namapenjual :<p>Pama Penjual</p>}</div>
-        <div className='col'>{ produk ? produk.namaProduk :<p>nama Produk</p>}</div>
-        <div className='col'>{ produk ? <p>Rp. {produk.harga}</p> :<p>Hraga</p>}</div>
+        <div className='col'>{produk ? produk.namapenjual :<p>Nama Penjual</p>}</div>
+        <div className='col'>{ produk ? produk.namaProduk :<p>Nama Produk</p>}</div>
+        <div className='col'>{ produk ? <p>Rp. {produk.harga}</p> :<p>Harga</p>}</div>
         <div className='col'>{ produk ? <p>{produk.qty} Pcs</p> :<p>Stock</p>}</div>
         <div className='col'>{ produk ? produk.deskripsi.slice(0,20) :<p>Desc</p>}</div>
         <div className='col'>{ produk ? produk.warna :<p>Warna</p>}</div>
