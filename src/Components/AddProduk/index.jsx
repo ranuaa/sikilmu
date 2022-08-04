@@ -124,7 +124,7 @@ const AddProduct = ({kondisi}) => {
     return (
         <div>
             <Button variant="primary" onClick={handleShow}>
-                {kondisi? "Add" : "Edit"}
+            Add / Edit Product
             </Button>
 
             <Modal show={show} onHide={handleClose}>
@@ -142,6 +142,7 @@ const AddProduct = ({kondisi}) => {
                             placeholder='Nama Penjual' 
                             value={namaPenjual} 
                             onChange={(e) => setNamaPenjual(e.target.value)}
+                            required
                             />
                             <label>Nama Produk</label>
                             <input type="text" 
@@ -149,6 +150,7 @@ const AddProduct = ({kondisi}) => {
                              placeholder='Nama Produk' 
                              value={namaProduk} 
                              onChange={(e) => setNamaProduk(e.target.value)}
+                             required
                             />
                             <label>Harga</label>
                             <input type="text" 
@@ -156,6 +158,7 @@ const AddProduct = ({kondisi}) => {
                              placeholder='Harga Produk' 
                              value={harga} 
                              onChange={(e) => setHarga(e.target.value)}
+                             required
                             />
                             <label>Stock Quantity</label>
                             <input type="number" 
@@ -163,6 +166,7 @@ const AddProduct = ({kondisi}) => {
                             placeholder='Quantity Produk' 
                             value={qty} 
                             onChange={(e) => setQty(e.target.value)}
+                            required
                             />
                             <label>Deskripsi</label>
                             <textarea 
@@ -172,6 +176,7 @@ const AddProduct = ({kondisi}) => {
                             placeholder='Deskripsi Produk' 
                             value={deskripsi} 
                             onChange={(e) => setDeskripsi(e.target.value)}
+                            required
                             />
                             <label>Kategori</label>
                             <select 
@@ -179,6 +184,7 @@ const AddProduct = ({kondisi}) => {
                             placeholder='Kategori Produk' 
                             value={kategori} 
                             onChange={(e) => setKategori(e.target.value)}
+                            required
                             >
                                 <option value="Sneaker">Sneaker</option>
                                 <option value="Sport">Sport</option>
@@ -191,6 +197,7 @@ const AddProduct = ({kondisi}) => {
                              placeholder='Photo Produk' 
                              value={gambar} 
                              onChange={(e) => setGambar(e.target.value)}
+                             required
                             />
                             <label>Ukuran / Size</label>
                             <input type="number" 
@@ -198,6 +205,7 @@ const AddProduct = ({kondisi}) => {
                             placeholder='Ukuran / Size Produk' 
                             value={ukuran} 
                             onChange={(e) => setUkuran(e.target.value)}
+                            required
                             />
                             <label>Warna</label>
                             <input type="text" 
@@ -205,6 +213,7 @@ const AddProduct = ({kondisi}) => {
                              placeholder='Warna Produk' 
                              value={warna} 
                              onChange={(e) => setWarna(e.target.value)}
+                             required
                             />
                         </div>
                         <button className='btn-info' type='submit'> Submit </button>
