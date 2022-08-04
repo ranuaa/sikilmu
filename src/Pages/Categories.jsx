@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import Cards from '../Components/Cards';
 
 
 const Categories = () => {
@@ -14,10 +15,11 @@ const Categories = () => {
 
     const getCategory = async() => {
         const response = await axios.get(`http://localhost:3500/products?q=${id}`)
-        console.log(response)
+        setProduk(response.data)
     }
   return (
-    <div>Categories</div>
+    <div>
+    </div>
   )
 }
 

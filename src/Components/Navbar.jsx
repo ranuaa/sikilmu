@@ -20,7 +20,6 @@ function Navbar() {
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
           <img src="https://i.ibb.co/JjfZpZf/Group-32.png" alt="" />
-          <Icon icon="clarity:search-line" color='white' height={32} />
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
