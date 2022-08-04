@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { addProduct, getListProduk, updateProduct } from '../../action/produkAction';
+import { addProduct, getListProduk } from '../../action/produkAction';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
@@ -9,9 +9,9 @@ import '../../Style/AddProduct.css'
 
 
 
-const AddProduct = ({kondisi}) => {
+const EditProduk = ({kondisi}) => {
 
-    const [id, setId] = useState('');
+
     const [namaPenjual, setNamaPenjual] = useState('');
     const [namaProduk, setNamaProduk] = useState('');
     const [harga, setHarga] = useState('');
@@ -21,7 +21,7 @@ const AddProduct = ({kondisi}) => {
     const [gambar, setGambar] = useState('');
     const [ukuran, setUkuran] = useState(0)
     const [warna, setWarna] = useState('');
-    const { addProdukResult, detailProdukResult,updateProdukResult } = useSelector((state) => state.ProdukReducer);
+    const { addProdukResult } = useSelector((state) => state.ProdukReducer);
 
 
 
@@ -29,52 +29,21 @@ const AddProduct = ({kondisi}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if ( id ) {
-            dispatch(updateProduct({
-                id: id,
-                namapenjual: namaPenjual,
-                namaProduk: namaProduk,
-                harga: harga,
-                qty: qty,
-                deskripsi: deskripsi,
-                warna: warna,
-                ukuran: ukuran,
-                gambarProduk: gambar,
-                kategori: kategori
-            }))
-        }else {
-            dispatch(addProduct({
-                namapenjual: namaPenjual,
-                namaProduk: namaProduk,
-                harga: harga,
-                qty: qty,
-                deskripsi: deskripsi,
-                warna: warna,
-                ukuran: ukuran,
-                gambarProduk: gambar,
-                kategori: kategori
-            }))
-        }
-
+        dispatch(addProduct({
+            namapenjual: namaPenjual,
+            namaProduk: namaProduk,
+            harga: harga,
+            qty: qty,
+            deskripsi: deskripsi,
+            warna: warna,
+            ukuran: ukuran,
+            gambarProduk: gambar,
+            kategori: kategori
+        }))
 
     }
 
     
-
-    useEffect(() => {
-        if (detailProdukResult) {
-            setNamaPenjual(detailProdukResult.namapenjual);
-            setNamaProduk(detailProdukResult.namaProduk);
-            setHarga(detailProdukResult.harga);
-            setQty(detailProdukResult.qty);
-            setDeskripsi(detailProdukResult.deskripsi)
-            setWarna(detailProdukResult.warna)
-            setUkuran(detailProdukResult.ukuran)
-            setGambar(detailProdukResult.gambarProduk)
-            setId(detailProdukResult.id)
-        }
-    }, [detailProdukResult, dispatch]) //
-        
 
     useEffect(() => {
         if (addProdukResult) {
@@ -88,23 +57,7 @@ const AddProduct = ({kondisi}) => {
             setUkuran('')
             setGambar('')
         }
-    }, [ addProdukResult, dispatch ]) //
-
-
-    useEffect(() => {
-        if (updateProdukResult) {
-            dispatch(getListProduk())
-            setNamaPenjual('');
-            setNamaProduk('');
-            setHarga('');
-            setQty('');
-            setDeskripsi('')
-            setWarna('')
-            setUkuran('')
-            setGambar('')
-        }
-    }, [ updateProdukResult, dispatch ]) //
-
+    }, [addProdukResult, dispatch])
 
 
     // const handleConvert = (e) => {
@@ -227,4 +180,4 @@ const AddProduct = ({kondisi}) => {
     )
 }
 
-export default AddProduct
+export default EditProduk
