@@ -124,7 +124,7 @@ const AddProduct = ({kondisi}) => {
     return (
         <div>
             <Button variant="primary" onClick={handleShow}>
-                {kondisi? "Add" : "Edit"}
+                Add / Edit
             </Button>
 
             <Modal show={show} onHide={handleClose}>
